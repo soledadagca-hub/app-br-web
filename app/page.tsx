@@ -221,9 +221,14 @@ export default function AppBRLanding() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="bg-[#169C92] hover:scale-105 transition-all text-white text-xl font-bold px-8 py-5 rounded-2xl shadow-xl">
-                Solicitar Presentación
-              </button>
+                        <a
+              href="https://wa.me/593999516554?text=Hola%20Soledad,%20quisiera%20una%20presentación%20de%20APP%20BR"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#169C92] hover:scale-105 transition-all text-white text-xl font-bold px-8 py-5 rounded-2xl shadow-xl inline-block"
+            >
+              Solicitar Presentación
+            </a>
 
               <button className="border-2 border-[#169C92] text-[#169C92] hover:bg-[#169C92] hover:text-white transition-all text-xl font-bold px-8 py-5 rounded-2xl">
                 Ver Funcionalidades
@@ -251,9 +256,11 @@ export default function AppBRLanding() {
             </div>
 
             <div className="mt-12 bg-[#F7F7F5] border-2 border-dashed border-[#2FA39A] rounded-3xl p-8 text-center">
-              <div className="w-44 h-44 mx-auto bg-white rounded-3xl shadow-inner flex items-center justify-center text-6xl mb-6 border border-gray-200">
-                QR
-              </div>
+            <img
+               src="/qr.png"
+               alt="QR APP BR"
+               className="w-44 h-44 mx-auto rounded-3xl shadow-inner mb-6 border border-gray-200 object-cover"
+            />
 
               <p className="text-2xl font-bold leading-snug">
                 Escanea el QR y solicita una presentación de APP BR
@@ -285,3 +292,4 @@ export default function AppBRLanding() {
     </div>
   );
 }
+
